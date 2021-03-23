@@ -28,7 +28,7 @@ class Photo(models.Model):
         return self.author.username + " " + self.created.strftime("%Y-%m-%d %H:%m:%S")
 
     def get_absolute_url(self):
-        return  reverse('photo:photo_detail', args=[self.id])
+        return reverse('photo:photo_detail', args=[self.id])
 
 
 
